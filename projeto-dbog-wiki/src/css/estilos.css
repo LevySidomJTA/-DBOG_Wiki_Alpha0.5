@@ -1,0 +1,198 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+main:after {
+	content: '';
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-evenly;
+}
+
+.informacoes .logo {
+	max-width: 350px;
+	margin-bottom: 80px;
+}
+
+.informacoes .descricao {
+	width: 49%;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 30px;
+}
+
+.botoes-carrossel {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.botoes-carrossel .botao {
+	background-color: #ffffff;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	border-color: #ffffff;
+}
+
+.botoes-carrossel .botao.selecionado {
+	background-color: #1d8346;
+}
+
+.menu-lateral {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.menu-lateral ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.menu-lateral .icone {
+	width: 30px;
+	filter: invert(1);
+	transition: 0.3s ease-in-out;
+}
+
+.menu-lateral .icone:hover {
+	transform: scale(1.2);
+}
+
+.carrossel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.carrossel .imagem {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	display: none;
+	animation: mudarImagem 0.5s;
+}
+
+.carrossel .imagem.ativa {
+	display: block;
+}
+
+@keyframes mudarImagem {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.linha-horizontal {
+	border-top: 4px solid #ffffffea;
+	margin: 20px 0; 
+  }	
+
+
+  .titulo {
+	font-family: 'Bruno Ace SC', cursive; /* Define a fonte do título */
+
+		font-size: 50px; /* Define o tamanho da fonte */
+		font-weight: bold; /* Define o peso da fonte */
+		color: #ffd208; /* Define a cor do texto */
+		text-align: center; /* Define o alinhamento do texto */
+  }
+
+  .slide-in-element {
+	opacity: 0; /* Define a opacidade inicial como 0 */
+	transform: translateX(-100%); /* Define a posição inicial fora da tela */
+	animation: slide-in 1s ease-in forwards; /* Define a animação */
+  }
+  
+  @keyframes slide-in {
+	from {
+	  opacity: 0; /* Opacidade inicial */
+	  transform: translateX(-100%); /* Posição inicial fora da tela */
+	}
+	to {
+	  opacity: 1; /* Opacidade final */
+	  transform: translateX(0); /* Posição final na tela */
+	}
+  }
+
+  .fade-in-element {
+	opacity: 0; /* Define a opacidade inicial como 0 */
+	animation: fade-in 2s ease-in forwards; /* Define a animação */
+  }
+  
+  @keyframes fade-in {
+	from {
+	  opacity: 0; /* Opacidade inicial */
+	}
+	to {
+	  opacity: 1; /* Opacidade final */
+	}
+  }
+  
+  .slide-in-element {
+	opacity: 0; /* Define a opacidade inicial como 0 */
+	transform: translateX(-100%); /* Define a posição inicial fora da tela */
+	animation: slide-in 1s ease-in forwards; /* Define a animação */
+  }
+  
+  @keyframes slide-in {
+	from {
+	  opacity: 0; /* Opacidade inicial */
+	  transform: translateX(-100%); /* Posição inicial fora da tela */
+	}
+	to {
+	  opacity: 1; /* Opacidade final */
+	  transform: translateX(0); /* Posição final na tela */
+	}
+  }
+
+  .container {
+	display: flex; /* Ativa o flexbox */
+	justify-content: center; /* Centraliza horizontalmente */
+	align-items: center; /* Centraliza verticalmente */
+	height: 100vh; /* Define a altura do contêiner */
+  }
+  
+  .container img {
+	max-width: 50%; /* Define a largura máxima da imagem */
+	max-height: 50%; /* Define a altura máxima da imagem */
+  }
+  
+  .parede {
+	background-color: #1b1919; /* Define a cor da parede */
+	padding: 20px; /* Define o espaçamento interno da parede */
+	color: #fff; /* Define a cor do texto */
+  }
+  
+  
+  
+  
+  
+  
